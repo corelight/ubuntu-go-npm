@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-LABEL maintainer="benjamin.becker@athenitas.com"
+LABEL maintainer="benjamin@corelight.com"
 
 RUN apt-get update && \
     apt-get -y install git make gcc nodejs npm curl sudo debhelper
