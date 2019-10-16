@@ -5,7 +5,7 @@ LABEL maintainer="benjamin@corelight.com"
 COPY ./nvm/install.sh /root/install-nvm.sh
 
 RUN apt-get update && \
-    apt-get -y install git make gcc curl sudo debhelper && \
+    apt-get -y install git make gcc curl sudo debhelper python && \
     bash /root/install-nvm.sh && \
     rm /root/install-nvm.sh
 
