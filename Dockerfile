@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 LABEL maintainer="benjamin@corelight.com"
 
-COPY ./nvm/install-nvm.sh /root/install-nvm.sh
+COPY ./nvm/install.sh /root/install-nvm.sh
 
 RUN apt-get update && \
     apt-get -y install git make gcc curl sudo debhelper && \
