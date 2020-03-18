@@ -15,4 +15,4 @@ RUN curl -L "https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz" -o /root/go1.
 ENV PATH="${PATH}:/usr/local/go/bin"
 
 ENV NVM_DIR="/root/.nvm"
-RUN . "${NVM_DIR}/nvm.sh" && nvm install v10.16.3
+RUN . "${NVM_DIR}/nvm.sh" && nvm install v12.15.0
