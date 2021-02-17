@@ -9,8 +9,8 @@ RUN apt-get update && \
     bash /root/install-nvm.sh && \
     rm /root/install-nvm.sh
 
-RUN curl -L "https://dl.google.com/go/go1.15.1.linux-amd64.tar.gz" -o /root/go1.15.1.linux-amd64.tgz && \
-    tar -C /usr/local -xzf /root/go1.15.1.linux-amd64.tgz
+RUN curl -L "https://golang.org/dl/go1.16.linux-amd64.tar.gz" -o /root/golang.tgz && \
+    tar -C /usr/local -xzf /root/golang.tgz
 
 ENV PATH="${PATH}:/usr/local/go/bin"
 
